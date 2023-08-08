@@ -98,9 +98,10 @@ span{
 
 .page-2{
     width:100%;
-    height:100vh;
+    height:140vh;
     background: #d9d9d9;
     position: relative;
+    overflow: hidden;
 }
 
 .head1{
@@ -127,6 +128,8 @@ span{
     background: #d9d9d9;
     width:100%;
     height:100vh;
+    position: relative;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -138,10 +141,17 @@ span{
     display: flex;
     justify-content: space-between;
     padding:1em;
+    margin-top:2em;
 }
 
 .txt-3{
     width:80%;
+}
+
+.txt-3 h1:hover{
+    font-size: 35px;
+    transition-delay:.1s;
+    cursor: pointer;
 }
 
 .img-2{
@@ -152,7 +162,85 @@ span{
     padding-right:2em;
 }
 
+
 .txt3pg-2{
     font-size: 24px;
     width:90%;
+}
+
+.timeLine{
+    position: relative;
+    max-width:75em;
+    margin:6.25em auto;
+}
+
+.container{
+    padding:.625em 3.125em;
+    position: relative;
+    width:50%;
+    
+}
+
+.textbox{
+    padding:1em 1.875em;
+    background: transparent;
+    position: relative;
+    border-radius: .375em;
+    width:65%;
+}
+
+.left-contain{
+    left:0;
+}
+.right-contain{
+    left:50%;
+}
+.media{
+    display: none;
+}
+.timeLine::after{
+    content:'';
+    position:absolute;
+    width:.375em;
+    height:100%;
+    background: #fff;
+    top:0;
+    left:50%;
+    margin-left:-.1875em;
+    z-index:1;
+    animation:moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height:0;
+    }
+    100%{
+        height:100%;
+    }
+}
+
+@media only screen and (max-width: 768px)  
+{
+
+    .boxicons{
+        width:1em;
+        height:1em;
+        background: #000;
+        margin-right: 1em;
+        display: block;
+    }
+    .boxicons:hover{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 979px)  
+{
+    .page-1{
+        display: inline-block;
+        position: relative;
+        padding:0.5em;
+        height:180vh;
+    }
 }
