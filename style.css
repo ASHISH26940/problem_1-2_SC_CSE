@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    overflow-x: hidden;
+    font-family: 'Borel', cursive;
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:4em;
+    background: #d9d9d9;;
+    position: fixed;
+    z-index:999;
+}
+
+.logo{
+    padding:.5em;
+}
+
+.nav ul{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.nav li{
+    padding:1em;
+    list-style-type: none;
+}
+
+.text{
+    width:100%;
+    height:17em;
+    position: relative;
+    top:4em;
+    font-size: 4em;
+    left:0.5em;
+}
+
+span{
+    font-weight: 300;
+    font-size: 35px;
+}
+.form{
+    overflow: hidden;
+}
+.inpt{
+    top:4em;
+    width:18em;
+    height:3em;
+    background: transparent;
+    border-bottom:1px solid black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn
+{
+    height:3em;
+    background: transparent;
+    border:none;
+    cursor:pointer;
+}
+
+.line{
+    top:1em;
+    left:22.5vw;
+    position: relative;
+    margin-top:.02em;
+    width:15em;
+    height:.02em;
+    background: #000;
+}
+
+.page-1{
+    overflow: hidden;
+    width:100%;
+    height:100vh;
+    position: relative;
+    background: #d9d9d9;
+    display: flex;
+}
+
+.img{
+    width:25em;
+    height:20em;
+    position: relative;
+    top:15em;
+    right:10em;
+    background-repeat: none;
+    object-fit: cover;
+}
+
+/* Page-2 */
+
+.page-2{
+    width:100%;
+    height:100vh;
+    background: #d9d9d9;
+    position: relative;
+}
+
+.head1{
+    position: relative;
+    font-size:3em;
+    padding-bottom: .7em;
+}
+
+.txt-2{
+    position: relative;
+    font-size: 28px;
+    left:2.3em;
+}
+
+.pg-2txt{
+    position: relative;
+    width:100%;
+    left:4em;
+    font-size: 20px;
+}
+
+/* Page-3 */
+.page-3{
+    background: #d9d9d9;
+    width:100%;
+    height:100vh;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.sec{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:1em;
+}
+
+.txt-3{
+    width:80%;
+}
+
+.img-2{
+    width:38em;
+    height:18em;
+    object-fit: cover;
+    background-image: none;
+    padding-right:2em;
+}
+
+.txt3pg-2{
+    font-size: 24px;
+    width:90%;
+}
